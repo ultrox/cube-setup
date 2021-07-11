@@ -1,0 +1,28 @@
+{
+  "name": "project01",
+  "version": "0.0.1",
+  "description": "Some theme",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx sass scss/global.scss css/global.css --watch",
+    "serve": "live-server .",
+    "build": "npx sass scss/global.scss css/global.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com"
+  },
+  "keywords": [],
+  "author": "Marko Vujanic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com",
+  "devDependencies": {
+    "gorko": "^0.7.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

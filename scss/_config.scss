@@ -1,0 +1,74 @@
+$gorko-base-size: 1rem;
+$gorko-size-scale: (
+  '300': $gorko-base-size * 0.8,
+  '400': $gorko-base-size,
+  '500': $gorko-base-size * 1.33,
+  '600': $gorko-base-size * 1.77,
+  '700': $gorko-base-size * 2.4
+);
+
+$base-font: '"IBM Plex Sans", Helvetica, Arial, sans-serif';
+
+$gorko-colors: (
+  'primary': #264653,
+  'secondary': #e76f51,
+  'secondary-shade': #9b2226,
+  'tertiary': #e9c46a,
+  'tertiary-glare': #e9d8a6,
+  'quaternary': #457b9d,
+  'light': #fafafa,
+  'light-shade': #eeeeee,
+  'grey': #c4c4c4
+);
+
+/**
+ * CORE CONFIG
+ * This powers everything from utility class generation to breakpoints
+ * to enabling/disabling pre-built components/utilities.
+ */
+
+$gorko-config: (
+  'bg': (
+    'items': $gorko-colors,
+    'output': 'standard',
+    'property': 'background'
+  ),
+  'color': (
+    'items': $gorko-colors,
+    'output': 'standard',
+    'property': 'color'
+  ),
+  'font': (
+    'items': (
+      'base': $base-font
+    ),
+    'output': 'standard',
+    'property': 'font-family'
+  ),
+    'gap-top': (
+        'items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'margin-top'
+    ),
+    'pad-top': (
+        'items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'padding-top'
+    ),
+    'text': (
+        'items': $gorko-size-scale,
+        'output': 'responsive',
+        'property': 'font-size'
+    ),
+    "weight": (
+        'items': (
+            'medium': '500',
+            'bold': '700'
+        ),
+        'output': 'standard',
+        'property': 'font-weight'
+    ),
+    'breakpoints': (
+        'md': '(min-width: 48em)'
+    )
+);

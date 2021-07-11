@@ -1,0 +1,12 @@
+body:before {
+    content: '';
+
+    background: url("/images/faded-antique-full-opaque.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
